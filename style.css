@@ -1,0 +1,89 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: lightskyblue;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 24px 48px 24px;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.language {
+  width: 48px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(56px);
+  border-radius: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.language a {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.content {
+  max-width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content h1 {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 128px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.btn-con {
+  max-width: 284px;
+  margin: 0 auto;
+  line-height: 80px;
+  background: #FFFFFF;
+  border-radius: 82px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100%;
+  color: #19191C;
+}
+
+
+
+
+
+
+
+
+
+
