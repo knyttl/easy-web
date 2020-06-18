@@ -11,6 +11,7 @@ html, body {
   margin: 0;
   padding: 0;
   background: black;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #myVideo {
@@ -140,6 +141,10 @@ header {
   transition: all .3s ease;
 }
 
+.mobile-btn {
+  display: none;
+}
+
 .btn-con:hover {
   opacity: 0.8;
 }
@@ -156,7 +161,7 @@ header {
   height: 128px;
   z-index: 1;
   transition: all .5s ease;
-  padding: 24px;
+  padding: 16px 24px;
 }
 
 .btn-con .dropdown-content a {
@@ -169,6 +174,11 @@ header {
 
 .btn-con .dropdown-content a:first-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  padding-bottom: 8px;
+}
+
+.btn-con .dropdown-content a:last-child {
+  padding-top: 8px;
 }
 
 .btn-con .dropdown-content a p {
@@ -189,8 +199,42 @@ header {
 
 @media (max-width: 570px) {
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  .content {
+    position: unset;
+    transform: unset;
+    max-width: 270px;
+    margin: 0 auto;
+  }
+
   .content h1 {
     font-size: 56px;
+  }
+
+  .btn-con {
+    display: none;
+  }
+
+  .mobile-btn {
+    display: block;
+    max-width: unset;
+    margin: 0;
+    line-height: 64px;
+  }
+
+  .mobile-btn .dropdown-content {
+    top: 0;
+    transform: translateY(-100%);
+    width: 100%;
   }
 
 }
