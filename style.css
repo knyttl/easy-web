@@ -57,7 +57,6 @@ header {
 }
 
 .content {
-  max-width: 650px;
   text-align: center;
   margin: 0 auto;
   position: absolute;
@@ -74,6 +73,18 @@ header {
   color: #FFFFFF;
   margin: 0;
   padding-bottom: 72px;
+}
+
+h1.en {
+  max-width: 650px;
+}
+
+h1.ru {
+  width: 900px;
+}
+
+h1.cz {
+  width: 650px;
 }
 
 .btn-con {
@@ -189,10 +200,27 @@ header {
   color: #FFFFFF;
 }
 
+@media (max-width: 950px) {
+
+  h1.ru {
+    font-size: 8vw;
+    width: 550px;
+  }
+
+}
+
 @media (max-width: 800px) {
 
   .content h1 {
     font-size: 88px;
+  }
+
+  h1.ru {
+    font-size: 80px;
+  }
+
+  h1.cz, .h1.ru {
+    max-width: 500px;
   }
 
 }
@@ -216,8 +244,16 @@ header {
     margin: 0 auto;
   }
 
+  .ru-content {
+    max-width: unset;
+  }
+
   .content h1 {
     font-size: 56px;
+  }
+
+  h1.cz, h1.ru  {
+    width: unset;
   }
 
   .btn-con {
