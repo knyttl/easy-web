@@ -2,14 +2,26 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Grotesk Display Pro;
+  src: url("fonts/Neue Haas Grotesk Display Pro 75 Bold.ttf");
+}
+
 html, body {
   margin: 0;
   padding: 0;
-  background: lightskyblue;
+  background: black;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .container {
-  width: 100vw;
   height: 100vh;
   padding: 48px 24px 48px 24px;
   position: relative;
@@ -31,10 +43,11 @@ header {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  position: relative;
 }
 
 .language a {
-  font-family: sans-serif;
+  font-family: Grotesk Display Pro, sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 14px;
@@ -53,11 +66,13 @@ header {
 }
 
 .content h1 {
-  font-family: sans-serif;
+  font-family: Grotesk Display Pro, sans-serif;
   font-weight: bold;
   font-size: 128px;
   line-height: 100%;
   color: #FFFFFF;
+  margin: 0;
+  padding-bottom: 72px;
 }
 
 .btn-con {
@@ -68,16 +83,117 @@ header {
   border-radius: 82px;
   text-align: center;
   cursor: pointer;
+  position: relative;
 }
 
 .btn {
-  font-family: sans-serif;
+  font-family: Grotesk Display Pro, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 100%;
   color: #19191C;
 }
 
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+  transition: all .5s ease;
+}
+
+.dropdown-content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(56px);
+  border-radius: 20px;
+  width: 48px;
+  z-index: 1;
+  transform: translateY(78%);
+  transition: all .5s ease;
+  text-align: center;
+}
+
+.dropdown-content a {
+  font-family: Grotesk Display Pro, sans-serif;
+  color: #ffffff;
+  line-height: 35px;
+  text-decoration: none;
+  display: block;
+  transition: all .3s ease;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+  transition: all .3s ease;
+}
+
+.language:hover .dropdown-content, .btn-con:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transition: all .3s ease;
+}
+
+.language:hover {
+  background: rgba(255, 255, 255, 0.32);
+  transition: all .3s ease;
+}
+
+.btn-con:hover {
+  opacity: 0.8;
+}
+
+.btn-con .dropdown-content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(56px);
+  border-radius: 32px;
+  transform: unset;
+  width: 284px;
+  height: 128px;
+  z-index: 1;
+  transition: all .5s ease;
+  padding: 24px;
+}
+
+.btn-con .dropdown-content a {
+  padding: unset;
+  display: flex;
+  height: 50%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-con .dropdown-content a:first-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.btn-con .dropdown-content a p {
+  font-family: Grotesk Display Pro, sans-serif;
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 800px) {
+
+  .content h1 {
+    font-size: 88px;
+  }
+
+}
+
+@media (max-width: 570px) {
+
+  .content h1 {
+    font-size: 56px;
+  }
+
+}
 
 
 

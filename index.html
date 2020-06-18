@@ -7,19 +7,36 @@
   <title>Easy web</title>
 </head>
 <body>
+  <video autoplay muted loop id="myVideo">
+    <source src="assets/rocky-mountains.mp4" type="video/mp4">
+  </video>
   <div class="container">
     <header>
       <div class="logo">
         <img src="assets/Logo.svg" />
       </div>
       <div class="language">
-        <a>EN</a>
+        <a class="dropbtn">EN</a>
+        <div class="dropdown-content">
+          <a href="#">Cz</a>
+          <a href="#">Ru</a>
+        </div>
       </div>
     </header>
     <div class="content">
       <h1>Learn something every day. It's easy.</h1>
       <div class="btn-con">
         <a class="btn">Avaiable for iOS & Android</a>
+       <div class="dropdown-content">
+        <a href="#">
+          <p>Download for iOS</p>
+          <img src="assets/Apple.svg">
+        </a>
+        <a href="#">
+          <p>Downlaod for Android</p>
+          <img src="assets/android.svg">
+        </a>
+      </div>
       </div>
     </div>
   </div>
