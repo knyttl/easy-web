@@ -84,7 +84,7 @@ h1.ru {
 }
 
 h1.cz {
-  width: 650px;
+  width: 770px;
 }
 
 .btn-con {
@@ -217,10 +217,11 @@ h1.cz {
 
   h1.ru {
     font-size: 80px;
+    max-width: 500px;
   }
 
-  h1.cz, .h1.ru {
-    max-width: 500px;
+  h1.cz {
+    max-width: 540px;
   }
 
 }
@@ -244,7 +245,7 @@ h1.cz {
     margin: 0 auto;
   }
 
-  .ru-content {
+  .unset {
     max-width: unset;
   }
 
@@ -254,6 +255,11 @@ h1.cz {
 
   h1.cz, h1.ru  {
     width: unset;
+  }
+
+  h1.cz {
+    width: 100%;
+    max-width: 340px;
   }
 
   .btn-con {

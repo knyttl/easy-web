@@ -8,6 +8,7 @@
   <meta name="robots" content="all">
   <meta name=”format-detection” content=”telephone=no”>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animate.min.css">
   <link rel="shortcut icon" href="" type="image/x-icon"/>
   <title>Easy web</title>
 </head>
@@ -28,9 +29,14 @@
         </div>
       </div>
     </header>
-    <div class="ru-content content">
-      <h1 class="ru">Узнай что-нибудь каждый день. Это просто.</h1>
-      <div class="btn-con">
+    <div class="unset content">
+      <h1 class="wow fadeIn ru" data-wow-duration="5s" data-wow-delay=".3s">
+        Узнай что-нибудь каждый день.
+        <span class="wow fadeIn" data-wow-duration="2s" data-wow-delay="2s">
+          Это просто.
+        </span>
+      </h1>
+      <div class="wow fadeIn btn-con" data-wow-duration="2s" data-wow-delay="3s">
         <a class="btn">Доступно про iOS для Android</a>
          <div class="dropdown-content">
           <a href="#">
@@ -44,7 +50,7 @@
         </div>
       </div>
     </div>
-    <div class="mobile-btn btn-con">
+    <div class="wow fadeIn mobile-btn btn-con" data-wow-duration="2s" data-wow-delay="3s">
       <a class="btn">Доступно про iOS для Android</a>
        <div class="dropdown-content">
         <a href="#">
@@ -58,5 +64,11 @@
       </div>
     </div>
   </div>
+  <script src="wow.min.js"></script>
+  <script>
+
+    new WOW({offset: -1000 }).init()
+
+  </script>
 </body>
 </html>

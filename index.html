@@ -8,6 +8,7 @@
   <meta name="robots" content="all">
   <meta name=”format-detection” content=”telephone=no”>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animate.min.css">
   <link rel="shortcut icon" href="" type="image/x-icon"/>
   <title>Easy web</title>
 </head>
@@ -29,22 +30,27 @@
       </div>
     </header>
     <div class="content">
-      <h1 class="en">Learn something every day. It's easy.</h1>
-      <div class="btn-con">
+      <h1 class="wow fadeIn en" data-wow-duration="5s" data-wow-delay=".3s">
+        Learn something every day.
+        <span class="wow fadeIn" data-wow-duration="2s" data-wow-delay="2s">
+          It's easy.
+        </span>
+      </h1>
+      <div class="wow fadeIn btn-con" data-wow-duration="2s" data-wow-delay="3s">
         <a class="btn">Avaiable for iOS & Android</a>
-         <div class="dropdown-content">
-          <a href="#">
-            <p>Download for iOS</p>
-            <img src="assets/Apple.svg">
-          </a>
-          <a href="#">
-            <p>Downlaod for Android</p>
-            <img src="assets/android.svg">
-          </a>
-        </div>
+          <div class="dropdown-content">
+            <a href="#">
+              <p>Download for iOS</p>
+              <img src="assets/Apple.svg">
+            </a>
+            <a href="#">
+              <p>Downlaod for Android</p>
+              <img src="assets/android.svg">
+            </a>
+          </div>
       </div>
     </div>
-    <div class="mobile-btn btn-con">
+    <div class="wow fadeIn mobile-btn btn-con" data-wow-duration="2s" data-wow-delay="3s">
       <a class="btn">Avaiable for iOS & Android</a>
        <div class="dropdown-content">
         <a href="#">
@@ -58,5 +64,11 @@
       </div>
     </div>
   </div>
+  <script src="wow.min.js"></script>
+  <script>
+
+    new WOW({offset: -1000 }).init()
+
+  </script>
 </body>
 </html>
