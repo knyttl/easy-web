@@ -65,26 +65,30 @@ header {
   transform: translate(-50%, -50%);
 }
 
-.content h1 {
+.content h1, .ru-text {
   font-family: Grotesk Display Pro, sans-serif;
   font-weight: bold;
-  font-size: 128px;
+  font-size: 104px;
   line-height: 100%;
   color: #FFFFFF;
   margin: 0;
+}
+
+.content span {
+  display: block;
   padding-bottom: 72px;
 }
 
 h1.en {
-  max-width: 650px;
+  max-width: 615px;
 }
 
 h1.ru {
-  width: 900px;
+  width: 775px;
 }
 
 h1.cz {
-  width: 770px;
+  width: 700px;
 }
 
 .btn-con {
@@ -203,21 +207,24 @@ h1.cz {
 @media (max-width: 950px) {
 
   h1.ru {
-    font-size: 8vw;
+    font-size: 88px;
     width: 550px;
+  }
+
+  .ru-text {
+    font-size: 88px;
   }
 
 }
 
 @media (max-width: 800px) {
 
-  .content h1 {
-    font-size: 88px;
+  .content h1, .ru-text {
+    font-size: 80px;
   }
 
   h1.ru {
-    font-size: 80px;
-    max-width: 500px;
+    max-width: 550px;
   }
 
   h1.cz {
@@ -249,8 +256,8 @@ h1.cz {
     max-width: unset;
   }
 
-  .content h1 {
-    font-size: 56px;
+  .content h1, .content span {
+    font-size: 54px;
   }
 
   h1.cz, h1.ru  {
